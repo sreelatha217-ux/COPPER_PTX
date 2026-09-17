@@ -1,0 +1,43 @@
+Solver command line: ['/workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc', '-seconds', '7200', '-ratioGap', '0.01', '-printingOptions', 'all', '-import', '/tmp/tmpk4xcc_bu.pyomo.lp', '-stat=1', '-solve', '-solu', '/tmp/tmpk4xcc_bu.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc -seconds 7200 -ratioGap 0.01 -printingOptions all -import /tmp/tmpk4xcc_bu.pyomo.lp -stat=1 -solve -solu /tmp/tmpk4xcc_bu.pyomo.soln (default strategy 1)
+seconds was changed from 1e+100 to 7200
+ratioGap was changed from 0 to 0.01
+Option for printingOptions changed from normal to all
+Presolve 1364 (-268) rows, 422 (-220) columns and 4938 (-825) elements
+Statistics for presolved model
+Original problem has 40 integers (40 of which binary)
+Presolved problem has 40 integers (40 of which binary)
+==== 370 zero objective 29 different
+==== absolute objective values 29 different
+==== for integers 14 zero objective 3 different
+14 variables have objective of 0
+6 variables have objective of 196165
+20 variables have objective of 261554
+==== for integers absolute objective values 3 different
+14 variables have objective of 0
+6 variables have objective of 196165
+20 variables have objective of 261554
+===== end objective counts
+
+
+Problem has 1364 rows, 422 columns (52 with objective) and 4938 elements
+There are 24 singletons with objective 
+Column breakdown:
+48 of type 0.0->inf, 46 of type 0.0->up, 0 of type lo->inf, 
+96 of type lo->up, 192 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 40 of type 0.0->1.0 
+Row breakdown:
+36 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+19 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+49 of type G other, 440 of type L 0.0, 4 of type L 1.0, 
+814 of type L other, 0 of type Range 0.0->1.0, 2 of type Range other, 
+0 of type Free 
+Problem is infeasible - 0.01 seconds
+Total time (CPU seconds):       0.02   (Wallclock seconds):       0.02
+
+

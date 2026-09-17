@@ -205,6 +205,7 @@ def build_model(
     m.ramp_max = elec.ramp_rate_mw_per_h
     m.D_target = elec.annual_target_tonnes
     m.eta_compress = elec.compression_efficiency_tonnes_per_mwh
+    m.annualization_factor = config.annualization_factor
 
     # Storage
     m.S_max = sto.s_max_tonnes
@@ -224,8 +225,10 @@ def build_model(
     m.R_line = grid.line_resistance_pu  # pu PER KM -- scaled by L[i,j] in C14_voltage_drop
     m.X_line = grid.line_reactance_pu   # pu PER KM -- scaled by L[i,j] in C14_voltage_drop
     m.V_base = grid.v_base_kv
-    m.V_min_sq = grid.v_min_pu ** 2
-    m.V_max_sq = grid.v_max_pu ** 2
+    # v stores squared voltage in kV^2; convert the per-unit limits to
+    # the same units used by the DistFlow voltage-drop equations below.
+    m.V_min_sq = (grid.v_min_pu * m.V_base) ** 2
+    m.V_max_sq = (grid.v_max_pu * m.V_base) ** 2
 
     # ---------------------------------------------- First-stage variables
     m.P_res_w = pyo.Var(domain=pyo.NonNegativeReals, bounds=(inv.p_res_w_min, inv.p_res_w_max))
@@ -273,7 +276,7 @@ def build_model(
             mm.pi[w] * mm.price[w, t] * mm.g[w, t] * mm.delta_t
             for w in mm.OMEGA for t in mm.T
         )
-        return mm.CRF * capex + expected_import_cost
+        return mm.CRF * capex + mm.annualization_factor * expected_import_cost
 
     m.total_cost = pyo.Objective(rule=_objective_rule, sense=pyo.minimize)
 
@@ -283,6 +286,11 @@ def build_model(
     def _c1_single_connection(mm, i):
         return sum(mm.x[i, j] for j in mm.J) <= 1
     m.C1_single_connection = pyo.Constraint(m.I, rule=_c1_single_connection)
+
+    if config.require_res_connection:
+        def _c1_at_least_one_connection(mm):
+            return sum(mm.x[i, j] for i in mm.I for j in mm.J) >= 1
+        m.C1_at_least_one_connection = pyo.Constraint(rule=_c1_at_least_one_connection)
 
     # ============================================================
     # C2 corrected -- Eqs. (8)-(9): cable selection logic (K2 catalog)
@@ -310,6 +318,10 @@ def build_model(
     )
 
     # C3 (RES capacity bounds) is enforced directly via Var bounds above.
+    if config.require_res_connection:
+        def _c3_minimum_res_capacity(mm):
+            return mm.P_res_w + mm.P_res_s >= mm.P_elec_max
+        m.C3_minimum_res_capacity = pyo.Constraint(rule=_c3_minimum_res_capacity)
 
     # ============================================================
     # C5 -- Eq. (13): electrolyser energy balance
@@ -360,10 +372,16 @@ def build_model(
     # ============================================================
     # C11 -- Eq. (21): buffer storage dynamics
     # ============================================================
+    def _c11_initial_storage(mm, w):
+        s0 = mm.soc_init_frac * mm.S_max
+        return mm.s[w, mm.T.first()] == s0 + mm.q[w, mm.T.first()] - mm.d_t[mm.T.first()]
+
+    m.C11_initial_storage = pyo.Constraint(m.OMEGA, rule=_c11_initial_storage)
+
     def _c11_storage_dynamics(mm, w, t):
         if t == mm.T.first():
             return pyo.Constraint.Skip
-        return mm.s[w, t] == mm.s[w, t - 1] + mm.eta_compress * mm.q[w, t] - mm.d_t[t]
+        return mm.s[w, t] == mm.s[w, t - 1] + mm.q[w, t] - mm.d_t[t]
     m.C11_storage_dynamics = pyo.Constraint(m.OMEGA, m.T, rule=_c11_storage_dynamics)
 
     # C12 (storage bounds) enforced via Var bounds on `s`.
@@ -388,12 +406,26 @@ def build_model(
     # C14 -- Eqs. (27)-(29): linearized DistFlow (simplified radial
     # topology, see module docstring)
     # ============================================================
-    def _c14_active_balance(mm, i, j, w, t):
-        """Active power on corridor (i,j): electrolyser load attributed
-        to substation j is served net of any RES output routed through
-        that same corridor, scaled by the connection decision x[i,j]."""
-        return mm.P_flow[i, j, w, t] == mm.x[i, j] * (mm.p[w, t] - mm.r[w, t]) / max(len(mm.I), 1)
-    m.C14_active_balance = pyo.Constraint(m.I, m.J, m.OMEGA, m.T, rule=_c14_active_balance)
+    # Linearize the binary-continuous product in the active balance. The
+    # p and r bounds imply |p-r| <= p_max + P_w_max + P_s_max.
+    active_balance_M = (
+        elec.p_elec_max + inv.p_res_w_max + inv.p_res_s_max
+    ) / max(len(m.I), 1)
+
+    def _c14_active_balance_upper(mm, i, j, w, t):
+        net_power = (mm.p[w, t] - mm.r[w, t]) / max(len(mm.I), 1)
+        return mm.P_flow[i, j, w, t] - net_power <= active_balance_M * (1 - mm.x[i, j])
+
+    def _c14_active_balance_lower(mm, i, j, w, t):
+        net_power = (mm.p[w, t] - mm.r[w, t]) / max(len(mm.I), 1)
+        return mm.P_flow[i, j, w, t] - net_power >= -active_balance_M * (1 - mm.x[i, j])
+
+    m.C14_active_balance_upper = pyo.Constraint(
+        m.I, m.J, m.OMEGA, m.T, rule=_c14_active_balance_upper
+    )
+    m.C14_active_balance_lower = pyo.Constraint(
+        m.I, m.J, m.OMEGA, m.T, rule=_c14_active_balance_lower
+    )
 
     # C14_voltage_drop -- FIXED (big-M gated on x[i,j]).
     #

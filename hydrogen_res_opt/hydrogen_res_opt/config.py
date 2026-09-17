@@ -189,9 +189,11 @@ class ModelConfig:
     grid: GridParameters = field(default_factory=GridParameters)
     storage: StorageParameters = field(default_factory=StorageParameters)
     scenarios: ScenarioParameters = field(default_factory=ScenarioParameters)
-    solver_name: str = "gurobi"           # "gurobi" / "cplex" in production, "cbc" for testing
+    solver_name: str = "cbc"              # Use bundled CBC locally; override with Gurobi/CPLEX in production.
     solver_time_limit_s: int = 7200    # 2 h per Section 17 implementation notes
     mip_gap: float = 0.01
+    annualization_factor: float = 1.0    # Representative-horizon costs/production to annual values.
+    require_res_connection: bool = True
 
     @classmethod
     def from_file(cls, path: str | Path) -> "ModelConfig":
@@ -211,7 +213,10 @@ class ModelConfig:
                 current = getattr(cfg, section_name)
                 merged = {**asdict(current), **raw[section_name]}
                 setattr(cfg, section_name, type(current)(**merged))
-        for scalar in ("solver_name", "solver_time_limit_s", "mip_gap"):
+        for scalar in (
+            "solver_name", "solver_time_limit_s", "mip_gap",
+            "annualization_factor", "require_res_connection",
+        ):
             if scalar in raw:
                 setattr(cfg, scalar, raw[scalar])
         logger.info("Loaded model configuration from %s", path)
@@ -227,4 +232,6 @@ class ModelConfig:
             "solver_name": self.solver_name,
             "solver_time_limit_s": self.solver_time_limit_s,
             "mip_gap": self.mip_gap,
+            "annualization_factor": self.annualization_factor,
+            "require_res_connection": self.require_res_connection,
         }

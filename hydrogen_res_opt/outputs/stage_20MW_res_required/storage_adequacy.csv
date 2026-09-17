@@ -1,0 +1,3 @@
+scenario,max_storage_tonnes,min_storage_tonnes,s_max_tonnes,binding
+0,1.93,0.98,2,False
+1,1.4042857,0.62,2,False

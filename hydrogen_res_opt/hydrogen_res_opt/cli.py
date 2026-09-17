@@ -48,14 +48,30 @@ def _build_config_for_stage(stage_mw: int) -> ModelConfig:
         )
         return cfg
     target = STAGE_MW_TO_TARGET_TONNES[stage_mw]
+    if stage_mw >= 50:
+        target /= 365.0
+        logger.info(
+            "Using a one-day representative target of %.4f t for the %d MW stage "
+            "(annual reference %.1f t).",
+            target, stage_mw, STAGE_MW_TO_TARGET_TONNES[stage_mw],
+        )
     cfg.electrolyser = replace(
         cfg.electrolyser, p_elec_max=float(stage_mw), annual_target_tonnes=float(target)
     )
+    if stage_mw >= 20:
+        cfg.annualization_factor = 365.0
+    if stage_mw >= 50:
+        cfg.grid = replace(
+            cfg.grid,
+            transformer_thermal_limit_mva=float(stage_mw) * 1.10,
+            cable_thermal_limit_mw=float(stage_mw),
+        )
     return cfg
 
 
 def _cmd_run(args: argparse.Namespace) -> int:
     config = _build_config_for_stage(args.stage_mw)
+    config.require_res_connection = not args.allow_grid_only
     sets = ModelSets()
     try:
         run_full_pipeline(
@@ -73,7 +89,7 @@ def _cmd_run(args: argparse.Namespace) -> int:
 def _cmd_breakeven(args: argparse.Namespace) -> int:
     from .breakeven_analysis import breakeven_distance
 
-    config = ModelConfig()
+    config = _build_config_for_stage(args.stage_mw)
     sets = ModelSets()
     generator = ScenarioGenerator(sets, config.scenarios)
     tree = generator.synthetic()
@@ -116,12 +132,17 @@ def build_arg_parser() -> argparse.ArgumentParser:
     p_run.add_argument("--output-dir", type=str, default="./outputs")
     p_run.add_argument("--lcoh-surface", action="store_true",
                         help="Also compute the (expensive) 2-D LCOH surface sweep.")
+    p_run.add_argument(
+        "--allow-grid-only", action="store_true",
+        help="Comparison mode: allow the optimizer to omit RES connection and capacity.",
+    )
     p_run.set_defaults(func=_cmd_run)
 
     p_break = sub.add_parser("breakeven", help="Run the break-even cable distance sweep.")
     p_break.add_argument("--remote-site", default="remote1")
     p_break.add_argument("--collocated-site", default="collocated_FRN")
     p_break.add_argument("--substation", default="FRN")
+    p_break.add_argument("--stage-mw", type=int, default=20, choices=[20, 50, 100, 300])
     p_break.set_defaults(func=_cmd_breakeven)
 
     p_conv = sub.add_parser(

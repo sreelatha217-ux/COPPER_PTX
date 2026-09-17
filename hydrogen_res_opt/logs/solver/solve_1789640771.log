@@ -1,0 +1,74 @@
+Solver command line: ['/workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc', '-seconds', '30', '-ratioGap', '0.01', '-printingOptions', 'all', '-import', '/tmp/tmpsgplums_.pyomo.lp', '-stat=1', '-solve', '-solu', '/tmp/tmpsgplums_.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc -seconds 30 -ratioGap 0.01 -printingOptions all -import /tmp/tmpsgplums_.pyomo.lp -stat=1 -solve -solu /tmp/tmpsgplums_.pyomo.soln (default strategy 1)
+seconds was changed from 1e+100 to 30
+ratioGap was changed from 0 to 0.01
+Option for printingOptions changed from normal to all
+Presolve 1574 (-268) rows, 568 (-260) columns and 4556 (-824) elements
+Statistics for presolved model
+Original problem has 10 integers (10 of which binary)
+Presolved problem has 4 integers (4 of which binary)
+==== 515 zero objective 54 different
+==== absolute objective values 54 different
+==== for integers 1 zero objective 4 different
+1 variables have objective of 0
+1 variables have objective of 196165
+1 variables have objective of 261554
+1 variables have objective of 523107
+==== for integers absolute objective values 4 different
+1 variables have objective of 0
+1 variables have objective of 196165
+1 variables have objective of 261554
+1 variables have objective of 523107
+===== end objective counts
+
+
+Problem has 1574 rows, 568 columns (53 with objective) and 4556 elements
+There are 48 singletons with objective 
+Column breakdown:
+96 of type 0.0->inf, 84 of type 0.0->up, 0 of type lo->inf, 
+192 of type lo->up, 192 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 4 of type 0.0->1.0 
+Row breakdown:
+48 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+34 of type E other, 0 of type G 0.0, 1 of type G 1.0, 
+99 of type G other, 432 of type L 0.0, 2 of type L 1.0, 
+956 of type L other, 0 of type Range 0.0->1.0, 2 of type Range other, 
+0 of type Free 
+Continuous objective value is 588496 - 0.01 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 960 strengthened rows, 0 substitutions
+Cgl0004I processed model has 1348 rows, 438 columns (4 integer (4 of which binary)) and 4680 elements
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 588496
+Cbc0038I Relaxing continuous gives 588496
+Cbc0038I Before mini branch and bound, 4 integers at bound fixed and 149 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.03 seconds)
+Cbc0038I After 0.03 seconds - Feasibility pump exiting with objective of 588496 - took 0.00 seconds
+Cbc0012I Integer solution of 588495.76 found by feasibility pump after 0 iterations and 0 nodes (0.04 seconds)
+Cbc0001I Search completed - best objective 588495.759593747, took 0 iterations and 0 nodes (0.04 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 588496 to 588496
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                588495.75959375
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.05
+Time (Wallclock seconds):       0.07
+
+Total time (CPU seconds):       0.06   (Wallclock seconds):       0.08
+
+

@@ -58,7 +58,11 @@ def compute_lcoh(outcome: SolveOutcome) -> LCOHResult:
     tc = outcome.objective_value
     if tc is None or np.isnan(tc):
         raise HydrogenOptError("Cannot compute LCOH: objective value is missing/NaN")
-    d_kg = outcome.build.config.electrolyser.annual_target_tonnes * 1000.0
+    d_kg = (
+        outcome.build.config.electrolyser.annual_target_tonnes
+        * outcome.build.config.annualization_factor
+        * 1000.0
+    )
     lcoh = tc / d_kg
     logger.info("LCOH = %.4f EUR/kg (TC=%.2f EUR, D=%.1f t/yr)", lcoh, tc, d_kg / 1000.0)
     return LCOHResult(total_annualized_cost_eur=tc, annual_h2_target_tonnes=d_kg / 1000.0,

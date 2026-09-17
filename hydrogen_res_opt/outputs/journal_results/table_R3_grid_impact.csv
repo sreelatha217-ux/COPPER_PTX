@@ -1,0 +1,5 @@
+stage_mw,case,min_voltage_pu,max_voltage_pu,max_line_loading_pct
+20,Grid-only,0.95,0.95,0.0
+20,Compulsory RES,0.95,1.0,10.4261964
+300,Grid-only,0.95,0.95,0.0
+300,Compulsory RES,0.95,1.0,1.712328766666667

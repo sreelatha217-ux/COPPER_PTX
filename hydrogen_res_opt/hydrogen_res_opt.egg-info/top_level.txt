@@ -1,1 +1,3 @@
 hydrogen_res_opt
+logs
+outputs

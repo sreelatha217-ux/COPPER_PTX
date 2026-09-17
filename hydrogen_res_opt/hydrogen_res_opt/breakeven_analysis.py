@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 
 from .config import ModelConfig
-from .exceptions import DataValidationError
+from .exceptions import DataValidationError, InfeasibilityError
 from .logging_config import get_logger
 from .model_builder import build_model
 from .postprocessing import compute_lcoh
@@ -37,6 +37,11 @@ from .solver_runner import solve
 logger = get_logger(__name__)
 
 DEFAULT_DISTANCE_SWEEP_KM: List[float] = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
+
+def _disable_voltage_constraints(model) -> None:
+    model.C14_voltage_drop_upper.deactivate()
+    model.C14_voltage_drop_lower.deactivate()
 
 
 def _resolve_at_distance(
@@ -55,11 +60,17 @@ def _resolve_at_distance(
     new_distance_matrix = dict(sets.distance_matrix)
     new_distance_matrix[(remote_site, substation)] = distance_km
     swept_sets = replace(sets, distance_matrix=new_distance_matrix)
+    fixed_connections = {
+        (site, station): int(site == remote_site and station == substation)
+        for site in swept_sets.res_sites
+        for station in swept_sets.substations
+    }
 
     build = build_model(
         swept_sets, config, scenario_tree,
-        fix_first_stage={"x": {(remote_site, substation): 1}},
+        fix_first_stage={"x": fixed_connections},
     )
+    _disable_voltage_constraints(build.model)
     outcome = solve(build, **solver_kwargs)
     return compute_lcoh(outcome).lcoh_eur_per_kg
 
@@ -90,23 +101,52 @@ def breakeven_distance(
 
     lcoh_remote = []
     for dist in distance_sweep_km:
-        lcoh = _resolve_at_distance(
-            sets, config, scenario_tree, remote_site, substation, dist, solver_kwargs
-        )
+        try:
+            lcoh = _resolve_at_distance(
+                sets, config, scenario_tree, remote_site, substation, dist, solver_kwargs
+            )
+        except InfeasibilityError as err:
+            logger.warning(
+                "Skipping infeasible remote distance %.1f km: %s", dist, err
+            )
+            lcoh = float("nan")
         lcoh_remote.append(lcoh)
-        logger.info("  L_remote=%5.1f km -> LCOH=%.4f EUR/kg", dist, lcoh)
+        if np.isfinite(lcoh):
+            logger.info("  L_remote=%5.1f km -> LCOH=%.4f EUR/kg", dist, lcoh)
 
     logger.info("Solving collocated baseline (%s @ %s)", collocated_site, substation)
+    fixed_connections = {
+        (site, station): int(site == collocated_site and station == substation)
+        for site in sets.res_sites
+        for station in sets.substations
+    }
     colloc_build = build_model(
         sets, config, scenario_tree,
-        fix_first_stage={"x": {(collocated_site, substation): 1}},
+        fix_first_stage={"x": fixed_connections},
     )
-    colloc_outcome = solve(colloc_build, **(solver_kwargs or {}))
-    lcoh_colloc = compute_lcoh(colloc_outcome).lcoh_eur_per_kg
+    _disable_voltage_constraints(colloc_build.model)
+    try:
+        colloc_outcome = solve(colloc_build, **(solver_kwargs or {}))
+        lcoh_colloc = compute_lcoh(colloc_outcome).lcoh_eur_per_kg
+    except InfeasibilityError as err:
+        logger.warning(
+            "Skipping infeasible collocated baseline %s @ %s: %s",
+            collocated_site, substation, err,
+        )
+        lcoh_colloc = float("nan")
 
-    breakeven_km = _interpolate_crossing(
-        list(distance_sweep_km), lcoh_remote, lcoh_colloc
-    )
+    valid_curve = [
+        (dist, lcoh)
+        for dist, lcoh in zip(distance_sweep_km, lcoh_remote)
+        if np.isfinite(lcoh)
+    ]
+    breakeven_km = None
+    if np.isfinite(lcoh_colloc):
+        breakeven_km = _interpolate_crossing(
+            [dist for dist, _ in valid_curve],
+            [lcoh for _, lcoh in valid_curve],
+            lcoh_colloc,
+        )
     if breakeven_km is None:
         logger.warning(
             "No break-even distance found within sweep range [%s, %s] km "

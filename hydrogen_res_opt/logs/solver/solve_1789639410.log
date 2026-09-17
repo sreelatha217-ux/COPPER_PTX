@@ -1,0 +1,65 @@
+Solver command line: ['/workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc', '-seconds', '30', '-ratioGap', '0.01', '-printingOptions', 'all', '-import', '/tmp/tmp495pjqg3.pyomo.lp', '-stat=1', '-solve', '-solu', '/tmp/tmp495pjqg3.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc -seconds 30 -ratioGap 0.01 -printingOptions all -import /tmp/tmp495pjqg3.pyomo.lp -stat=1 -solve -solu /tmp/tmp495pjqg3.pyomo.soln (default strategy 1)
+seconds was changed from 1e+100 to 30
+ratioGap was changed from 0 to 0.01
+Option for printingOptions changed from normal to all
+Presolve 1524 (-316) rows, 568 (-260) columns and 4454 (-920) elements
+Statistics for presolved model
+Original problem has 10 integers (10 of which binary)
+Presolved problem has 4 integers (4 of which binary)
+==== 515 zero objective 54 different
+==== absolute objective values 54 different
+==== for integers 1 zero objective 4 different
+1 variables have objective of 0
+1 variables have objective of 196165
+1 variables have objective of 261554
+1 variables have objective of 523107
+==== for integers absolute objective values 4 different
+1 variables have objective of 0
+1 variables have objective of 196165
+1 variables have objective of 261554
+1 variables have objective of 523107
+===== end objective counts
+
+
+Problem has 1524 rows, 568 columns (53 with objective) and 4454 elements
+There are 48 singletons with objective 
+Column breakdown:
+96 of type 0.0->inf, 84 of type 0.0->up, 0 of type lo->inf, 
+192 of type lo->up, 192 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 4 of type 0.0->1.0 
+Row breakdown:
+48 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+34 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+98 of type G other, 432 of type L 0.0, 2 of type L 1.0, 
+908 of type L other, 0 of type Range 0.0->1.0, 2 of type Range other, 
+0 of type Free 
+Continuous objective value is 331.988 - 0.01 seconds
+Cgl0004I processed model has 192 rows, 146 columns (0 integer (0 of which binary)) and 542 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from 331.988 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                331.98817844
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.02
+Time (Wallclock seconds):       0.03
+
+Total time (CPU seconds):       0.04   (Wallclock seconds):       0.04
+
+

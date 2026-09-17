@@ -1,0 +1,77 @@
+Solver command line: ['/workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc', '-seconds', '7200', '-ratioGap', '0.01', '-printingOptions', 'all', '-import', '/tmp/tmpwtj8jpjk.pyomo.lp', '-stat=1', '-solve', '-solu', '/tmp/tmpwtj8jpjk.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /workspaces/COPPER_PTX/hydrogen_res_opt/.venv/lib/python3.14/site-packages/pulp/solverdir/cbc/linux/i64/cbc -seconds 7200 -ratioGap 0.01 -printingOptions all -import /tmp/tmpwtj8jpjk.pyomo.lp -stat=1 -solve -solu /tmp/tmpwtj8jpjk.pyomo.soln (default strategy 1)
+seconds was changed from 1e+100 to 7200
+ratioGap was changed from 0 to 0.01
+Option for printingOptions changed from normal to all
+Presolve 1407 (-228) rows, 415 (-227) columns and 5031 (-744) elements
+Statistics for presolved model
+Original problem has 40 integers (40 of which binary)
+Presolved problem has 40 integers (40 of which binary)
+==== 363 zero objective 29 different
+==== absolute objective values 29 different
+==== for integers 14 zero objective 3 different
+14 variables have objective of 0
+6 variables have objective of 196165
+20 variables have objective of 261554
+==== for integers absolute objective values 3 different
+14 variables have objective of 0
+6 variables have objective of 196165
+20 variables have objective of 261554
+===== end objective counts
+
+
+Problem has 1407 rows, 415 columns (52 with objective) and 5031 elements
+There are 24 singletons with objective 
+Column breakdown:
+48 of type 0.0->inf, 39 of type 0.0->up, 0 of type lo->inf, 
+96 of type lo->up, 192 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 40 of type 0.0->1.0 
+Row breakdown:
+36 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+13 of type E other, 0 of type G 0.0, 1 of type G 1.0, 
+50 of type G other, 440 of type L 0.0, 4 of type L 1.0, 
+862 of type L other, 0 of type Range 0.0->1.0, 1 of type Range other, 
+0 of type Free 
+Continuous objective value is 2.99376e+06 - 0.01 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 980 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 908 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 800 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 1 tightened bounds, 14 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 31 strengthened rows, 0 substitutions
+Cgl0003I 0 fixed, 0 tightened bounds, 31 strengthened rows, 0 substitutions
+Cgl0004I processed model has 1323 rows, 358 columns (31 integer (31 of which binary)) and 6631 elements
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of 2.99376e+06
+Cbc0038I Relaxing continuous gives 2.99376e+06
+Cbc0038I Before mini branch and bound, 31 integers at bound fixed and 40 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.05 seconds)
+Cbc0038I After 0.05 seconds - Feasibility pump exiting with objective of 2.99376e+06 - took 0.00 seconds
+Cbc0012I Integer solution of 2993762.9 found by feasibility pump after 0 iterations and 0 nodes (0.06 seconds)
+Cbc0001I Search completed - best objective 2993762.864543932, took 0 iterations and 0 nodes (0.06 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 2.99376e+06 to 2.99376e+06
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                2993762.86454393
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.09
+Time (Wallclock seconds):       0.10
+
+Total time (CPU seconds):       0.09   (Wallclock seconds):       0.11
+
+

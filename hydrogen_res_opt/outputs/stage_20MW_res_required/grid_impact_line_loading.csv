@@ -1,0 +1,9 @@
+res_site,substation,mean_loading_pct,max_loading_pct
+collocated_FRN,FRN,9.106023434999999,20.0
+collocated_FRN,YRJ,0.0,0.0
+collocated_YRJ,FRN,0.0,0.0
+collocated_YRJ,YRJ,0.0,0.0
+remote1,FRN,0.0,0.0
+remote1,YRJ,0.0,0.0
+remote2,FRN,0.0,0.0
+remote2,YRJ,0.0,0.0

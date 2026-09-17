@@ -131,9 +131,7 @@ def check_feasibility_preconditions(build: BuildResult) -> list[str]:
     # MILP enforces is D_target / n_period -- checking against that
     # (rather than a fixed 8760) is what keeps this precondition
     # consistent with what the solver will actually see.
-    peak_hourly_demand = (
-        elec.compression_efficiency_tonnes_per_mwh * elec.annual_target_tonnes
-    ) / n_period
+    peak_hourly_demand = elec.annual_target_tonnes / n_period
     if sto.s_max_tonnes < peak_hourly_demand:
         violations.append(
             f"F3 violated: S_max={sto.s_max_tonnes} t < implied hourly demand "

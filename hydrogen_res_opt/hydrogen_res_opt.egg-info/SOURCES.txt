@@ -1,4 +1,5 @@
 README.md
+pyproject.toml
 setup.py
 hydrogen_res_opt/__init__.py
 hydrogen_res_opt/breakeven_analysis.py
@@ -6,6 +7,7 @@ hydrogen_res_opt/cli.py
 hydrogen_res_opt/config.py
 hydrogen_res_opt/exceptions.py
 hydrogen_res_opt/grid_calibration.py
+hydrogen_res_opt/journal_results.py
 hydrogen_res_opt/logging_config.py
 hydrogen_res_opt/model_builder.py
 hydrogen_res_opt/pipeline.py
