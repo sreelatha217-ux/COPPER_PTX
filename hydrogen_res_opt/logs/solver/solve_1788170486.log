@@ -1,0 +1,45 @@
+Solver command line: []
+
+Warning: row 80 (name "c_u_C6_res_availability(0_18)_") contains 1 small (<= 1e-13) coefficient(s), ignored
+Warning: row 104 (name "c_u_C6_res_availability(1_18)_") contains 2 small (<= 1e-13) coefficient(s), ignored
+Warning: lp file contains 2 small (<= 1e-13) coefficient(s), ignored
+Read LP format model from file C:\Users\LF15NS\AppData\Local\Temp\tmpsxhnixbu.pyomo.lp
+Reading time = 0.07 seconds
+total_cost: 1262 rows, 828 columns, 2968 nonzeros
+Set parameter TimeLimit to value 30
+Set parameter MIPGap to value 0.01
+Set parameter NonConvex to value 2
+Gurobi Optimizer version 13.0.3 build v13.0.3rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  30
+MIPGap  0.01
+NonConvex  2
+
+Optimize a model with 1262 rows, 828 columns and 2968 nonzeros (Min)
+Model fingerprint: 0x61e9c6fd
+Model has 55 linear objective coefficients
+Model has 192 quadratic constraints
+Variable types: 818 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [2e-02, 3e+01]
+  QMatrix range    [5e-01, 5e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [3e+00, 3e+05]
+  Bounds range     [9e-01, 3e+02]
+  RHS range        [1e-02, 1e+03]
+
+Presolve removed 248 rows and 292 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+

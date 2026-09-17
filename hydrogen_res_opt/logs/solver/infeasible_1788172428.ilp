@@ -1,0 +1,10 @@
+\ Model RES_Substation_Cable_LCOH_MILP_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0xd8241660b71f2924
+Minimize
+ 
+Subject To
+ C14_voltage_drop(collocated_FRN_FRN_0_0): v(FRN_0_0) = 1089
+Bounds
+ -infinity <= v(FRN_0_0) <= 1.1025
+End

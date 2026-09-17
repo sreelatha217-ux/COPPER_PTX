@@ -1,0 +1,636 @@
+2026-08-28 13:29:31,990 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:29:32,015 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:29:32,018 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:29:32,030 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:29:32,040 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:29:32,041 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:29:32,055 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:29:32,074 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:29:32,075 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:35:08,547 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 13:35:08,557 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 13:35:08,631 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 13:35:08,642 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 13:35:08,647 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 13:35:08,716 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 13:35:08,716 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:116 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 2.3 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=5.0 MW at every substation j']
+2026-08-28 13:35:08,736 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:35:08,747 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:35:08,748 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:35:08,760 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:35:08,769 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:35:08,770 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:35:08,781 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:35:08,790 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:35:08,791 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:50:16,497 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 13:50:16,506 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 13:50:16,553 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 13:50:16,561 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 13:50:16,564 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 13:50:16,628 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 13:50:16,629 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 2.3 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=5.0 MW at every substation j']
+2026-08-28 13:50:16,640 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 13:50:16,644 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 13:50:16,792 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 13:50:16,793 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 2.3 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-28 13:50:17,771 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:50:17,778 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:50:17,779 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:50:17,788 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:50:17,798 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:50:17,799 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 13:50:17,809 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 13:50:17,819 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 13:50:17,819 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:06:32,406 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:06:32,417 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:06:32,481 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:06:32,490 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:06:32,495 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:06:32,562 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:06:32,563 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 2.3 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=5.0 MW at every substation j']
+2026-08-28 14:06:32,572 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:06:32,576 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:06:32,656 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:06:32,657 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 2.3 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-28 14:06:33,938 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:06:33,945 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:06:33,946 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:06:33,955 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:06:33,967 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:06:33,968 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:06:33,979 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:06:33,986 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:06:33,987 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:18:05,687 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:18:05,703 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:18:05,805 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:18:05,849 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:18:05,859 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:18:06,001 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:18:06,002 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-28 14:18:06,017 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:18:06,024 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:18:06,109 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:18:06,110 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:145 | Feasibility pre-checks F0-F5 passed.
+2026-08-28 14:18:06,113 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:190 | 'cbc' not found on PATH; using the CBC binary bundled with the 'pulp' package instead: C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe
+2026-08-28 14:18:06,117 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:220 | Solving with cbc (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-28 14:18:06,346 | WARNING  | hydrogen_res_opt.solver_runner | solver_runner.py:235 | Solver call raised an exception on attempt 1: Model constraint (C14_active_balance[collocated_FRN,FRN,0,0]) contains nonlinear terms that cannot be written to LP format
+2026-08-28 14:18:10,215 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:18:10,229 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:18:10,231 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:18:10,256 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:18:10,274 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:18:10,276 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:18:10,303 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:18:10,316 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:18:10,317 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:21:07,677 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:21:07,685 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:21:07,721 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:21:07,728 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:21:07,731 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:21:07,773 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:21:07,774 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-28 14:21:07,782 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:21:07,786 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:21:07,831 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:21:07,832 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:145 | Feasibility pre-checks F0-F5 passed.
+2026-08-28 14:21:07,833 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:190 | 'cbc' not found on PATH; using the CBC binary bundled with the 'pulp' package instead: C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\.venv\Lib\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe
+2026-08-28 14:21:07,836 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:220 | Solving with cbc (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-28 14:21:07,888 | WARNING  | hydrogen_res_opt.solver_runner | solver_runner.py:235 | Solver call raised an exception on attempt 1: Model constraint (C14_active_balance[collocated_FRN,FRN,0,0]) contains nonlinear terms that cannot be written to LP format
+2026-08-28 14:21:09,083 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:21:09,092 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:21:09,093 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:21:09,101 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:21:09,109 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:21:09,110 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:21:09,118 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:21:09,126 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:21:09,128 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:47:16,447 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:47:16,458 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:47:16,513 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:47:16,523 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:47:16,529 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:47:16,599 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:47:16,601 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-28 14:47:16,610 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 14:47:16,613 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-28 14:47:16,668 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-28 14:47:16,670 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:145 | Feasibility pre-checks F0-F5 passed.
+2026-08-28 14:47:16,681 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:215 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-28 14:47:16,974 | WARNING  | hydrogen_res_opt.solver_runner | solver_runner.py:230 | Solver call raised an exception on attempt 1: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+2026-08-28 14:47:18,262 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:47:18,271 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:47:18,275 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:47:18,291 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:47:18,303 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:47:18,304 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 14:47:18,326 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 14:47:18,339 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 14:47:18,340 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 18:43:17,855 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 18:43:17,862 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-28 18:43:17,877 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-28 18:43:17,882 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 18:43:17,884 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-28 18:43:17,900 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-28 18:43:17,901 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-28 18:43:17,909 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-28 18:43:17,910 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-28 18:43:17,926 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-28 18:43:17,927 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-28 18:43:18,850 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 18:43:18,857 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 18:43:18,859 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 18:43:18,866 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 18:43:18,875 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 18:43:18,877 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-28 18:43:18,891 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-28 18:43:18,900 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-28 18:43:18,901 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:10:33,602 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:10:33,709 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:10:33,897 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:10:34,667 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:10:34,674 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:10:34,710 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:10:34,712 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 10:10:35,300 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:10:35,305 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:10:35,329 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:10:35,330 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-31 10:10:39,894 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:10:39,908 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:10:39,910 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:10:40,722 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:10:40,736 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:10:40,737 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:10:41,635 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:10:41,714 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:10:41,716 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:45:47,222 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:45:47,254 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:45:47,287 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:45:47,380 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:45:47,385 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:45:47,423 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:45:47,427 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 10:45:47,489 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:45:47,494 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:45:47,529 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:45:47,530 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=2.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-31 10:45:49,443 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:45:49,457 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:45:49,458 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:45:49,475 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:45:49,490 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:45:49,491 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:45:49,517 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:45:49,535 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:45:49,536 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:58:48,064 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:58:48,072 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:58:48,093 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:58:48,110 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:58:48,118 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:58:48,149 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:58:48,151 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 2 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)', 'F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 10:58:48,165 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 10:58:48,170 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 10:58:48,199 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 10:58:48,200 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F1 violated: max annual production 1.1 t/yr < target D=5.0 t/yr (raise P_elec_max, raise efficiency, or lower D)']
+2026-08-31 10:58:49,140 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:58:49,145 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:58:49,146 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:58:49,154 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:58:49,163 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:58:49,164 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 10:58:49,172 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 10:58:49,182 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 10:58:49,183 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:03:39,394 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:03:39,402 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:03:39,429 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:03:39,439 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:03:39,443 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:03:39,479 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:03:39,480 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:143 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 11:03:39,494 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:03:39,508 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:03:39,543 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:03:39,548 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:145 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 11:03:39,577 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:215 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 11:03:40,543 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:03:40,549 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:03:40,550 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:03:40,557 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:03:40,563 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:03:40,565 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:03:40,574 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:03:40,579 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:03:40,580 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:15:16,751 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:15:16,760 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:15:16,781 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:15:16,788 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:15:16,790 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:15:16,812 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:15:16,814 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:147 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 11:15:16,825 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=4, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:15:16,829 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.072
+2026-08-31 11:15:16,855 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=4 |Omega|=2
+2026-08-31 11:15:16,857 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:149 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 11:15:16,868 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:219 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 11:15:17,821 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:15:17,826 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:15:17,827 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:15:17,833 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:15:17,838 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:15:17,839 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:15:17,846 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:15:17,854 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:15:17,855 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:53:47,617 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:53:47,631 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 11:53:47,710 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 11:53:47,726 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:53:47,731 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 11:53:47,825 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 11:53:47,826 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:147 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 11:53:47,839 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 11:53:47,845 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 11:53:47,912 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 11:53:47,913 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:149 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 11:53:47,925 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:219 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 11:53:48,629 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:53:48,637 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:53:48,638 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:53:48,647 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:53:48,655 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:53:48,657 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 11:53:48,665 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 11:53:48,674 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 11:53:48,675 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:01:26,324 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:01:26,350 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:01:26,419 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:01:26,432 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:01:26,438 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:01:26,521 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:01:26,522 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:147 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:01:26,532 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:01:26,537 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:01:26,596 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:01:26,598 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:149 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:01:26,607 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:219 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:01:27,084 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:01:27,094 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:01:27,095 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:01:27,106 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:01:27,118 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:01:27,119 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:01:27,132 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:01:27,144 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:01:27,146 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:03:58,201 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:03:58,213 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:03:58,272 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:03:58,279 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:03:58,285 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:03:58,336 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:03:58,337 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:147 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:03:58,344 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:03:58,347 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:03:58,393 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:03:58,394 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:149 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:03:58,406 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:219 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:03:59,691 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:03:59,697 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:03:59,698 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:03:59,708 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:03:59,718 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:03:59,719 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:03:59,726 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:03:59,732 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:03:59,735 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:07:16,011 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:07:16,021 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:07:16,111 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:07:16,133 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:07:16,143 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:07:16,229 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:07:16,231 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:172 | Feasibility pre-check found 2 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j', "F6 violated: scenario horizon n_period=24 << 8760, so model_builder's d_t derivation implies 0.0125 t/h demand (vs. true annual rate 0.000034 t/h) -- the annual target is being compressed into a short test horizon; either scale D_target down for sub-annual test instances or fix d_t's derivation to use 8760, not len(T)."]
+2026-08-31 12:07:16,241 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:07:16,244 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:07:16,297 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:07:16,297 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:172 | Feasibility pre-check found 1 violation(s): ["F6 violated: scenario horizon n_period=24 << 8760, so model_builder's d_t derivation implies 0.0125 t/h demand (vs. true annual rate 0.000034 t/h) -- the annual target is being compressed into a short test horizon; either scale D_target down for sub-annual test instances or fix d_t's derivation to use 8760, not len(T)."]
+2026-08-31 12:07:17,245 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:07:17,250 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:07:17,252 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:07:17,262 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:07:17,273 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:07:17,274 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:07:17,283 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:07:17,293 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:07:17,295 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:10:14,352 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:10:14,362 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:10:14,415 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:10:14,423 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:10:14,428 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:10:14,477 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:10:14,478 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:147 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:10:14,485 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:10:14,489 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:10:14,546 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:10:14,547 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:149 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:10:14,555 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:219 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:10:15,717 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:10:15,728 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:10:15,729 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:10:15,739 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:10:15,748 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:10:15,749 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:10:15,764 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:10:15,772 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:10:15,774 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:15:09,199 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:15:09,204 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:15:09,239 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:15:09,246 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:15:09,249 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:15:09,284 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:15:09,285 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:15:09,289 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:15:09,293 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:15:09,330 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:15:09,331 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:15:09,338 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:290 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:15:09,787 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:205 | IIS found 1 conflicting constraint(s), written to logs\solver\infeasible_1788171309.ilp: ['x1265']
+2026-08-31 12:15:10,483 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:15:10,488 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:15:10,489 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:15:10,495 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:15:10,501 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:15:10,502 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:15:10,508 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:15:10,517 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:15:10,518 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:16:18,385 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:16:18,393 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:16:18,433 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:16:18,439 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:16:18,441 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:16:18,477 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:16:18,477 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:16:18,485 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:16:18,487 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:16:18,529 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:16:18,531 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:16:18,538 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:290 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:16:19,182 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:205 | IIS found 1 conflicting constraint(s), written to logs\solver\infeasible_1788171379.ilp: ['x1265']
+2026-08-31 12:16:19,992 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:16:20,003 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:16:20,007 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:16:20,025 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:16:20,034 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:16:20,035 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:16:20,058 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:16:20,069 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:16:20,073 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:28:23,559 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:28:23,565 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:28:23,599 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:28:23,605 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:28:23,609 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:28:23,641 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:28:23,643 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:28:23,649 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:28:23,652 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:28:23,699 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:28:23,701 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:28:23,710 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:311 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:28:24,261 | WARNING  | hydrogen_res_opt.solver_runner | solver_runner.py:207 | IIS computation failed: Solver=gurobi_persistent passed unrecognized keywords: 
+	symbolic_solver_labels = True
+2026-08-31 12:28:25,342 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:28:25,350 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:28:25,351 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:28:25,361 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:28:25,367 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:28:25,368 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:28:25,375 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:28:25,382 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:28:25,384 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:33:47,163 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:33:47,178 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:33:47,292 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:33:47,362 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:33:47,376 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:33:47,507 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:33:47,508 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:33:47,523 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:33:47,533 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:33:47,668 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:426 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:33:47,670 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:33:47,692 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:33:48,758 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:234 | IIS found 2 conflicting element(s) (1 constraint(s), 1 bound(s)), written to logs\solver\infeasible_1788172428.ilp: ['C14_voltage_drop(collocated_FRN_FRN_0_0)', 'bound:v(FRN_0_0)[UB]']
+2026-08-31 12:33:49,830 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:33:49,838 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:33:49,839 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:33:49,849 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:33:49,858 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:33:49,859 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:33:49,867 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:33:49,875 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:33:49,877 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:42:34,865 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:42:34,876 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:42:34,943 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:42:34,950 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:42:34,955 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:42:35,009 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:42:35,012 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 12:42:35,028 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 12:42:35,030 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 12:42:35,147 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 12:42:35,148 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 12:42:35,156 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 12:42:35,581 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:377 | Solve finished in 0.4s: status=ok termination=optimal objective=144.9809
+2026-08-31 12:42:56,842 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:63 | LCOH = 0.4833 EUR/kg (TC=144.98 EUR, D=0.3 t/yr)
+2026-08-31 12:42:56,850 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:42:56,855 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:42:56,855 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:42:56,862 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:42:56,866 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:42:56,868 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:42:56,877 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 12:42:56,881 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 12:42:56,882 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 12:54:30,234 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:89 | === Stage: scenario generation ===
+2026-08-31 12:54:30,236 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=8760, target n_scenarios=50, wind-price corr=-0.35
+2026-08-31 12:54:48,789 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:89 | === Stage: scenario generation ===
+2026-08-31 12:54:48,791 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=8760, target n_scenarios=50, wind-price corr=-0.35
+2026-08-31 13:33:33,293 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 13:33:33,303 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 13:33:33,368 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 13:33:33,376 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 13:33:33,378 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 13:33:33,431 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 13:33:33,432 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F2 violated: transformer_thermal_limit_mva=0.1 < P_elec_max=15.0 MW at every substation j']
+2026-08-31 13:33:33,440 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=10, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-08-31 13:33:33,443 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.321
+2026-08-31 13:33:33,552 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=2 |J|=2 |K1|=1 |K2|=1 |T|=24 |Omega|=2
+2026-08-31 13:33:33,553 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-08-31 13:33:33,560 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/1), time_limit=30s, mip_gap=0.0100
+2026-08-31 13:33:33,846 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:377 | Solve finished in 0.3s: status=ok termination=optimal objective=144.9809
+2026-08-31 13:33:49,691 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:63 | LCOH = 0.4833 EUR/kg (TC=144.98 EUR, D=0.3 t/yr)
+2026-08-31 13:33:49,702 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 13:33:49,709 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 13:33:49,712 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 13:33:49,720 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 13:33:49,729 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 13:33:49,731 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 13:33:49,738 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=20, n_periods=48, target n_scenarios=5, wind-price corr=-0.35
+2026-08-31 13:33:49,747 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 13:33:49,748 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.350
+2026-08-31 13:34:06,671 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:89 | === Stage: scenario generation ===
+2026-08-31 13:34:06,672 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=8760, target n_scenarios=50, wind-price corr=-0.35
+2026-08-31 13:34:28,737 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-08-31 13:34:28,776 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.346
+2026-08-31 13:34:28,806 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:94 | === Stage: solve full stochastic MILP ===
+2026-08-31 13:34:28,815 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-09-01 12:29:50,562 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:89 | === Stage: scenario generation ===
+2026-09-01 12:29:50,566 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=8760, target n_scenarios=50, wind-price corr=-0.35
+2026-09-01 12:30:14,822 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-09-01 12:30:14,837 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.346
+2026-09-01 12:30:14,852 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:94 | === Stage: solve full stochastic MILP ===
+2026-09-01 12:30:14,856 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-09-01 13:49:36,227 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:91 | === Stage: scenario generation ===
+2026-09-01 13:49:36,229 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=8760, target n_scenarios=50, wind-price corr=-0.35
+2026-09-01 13:50:01,058 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-09-01 13:50:01,081 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.346
+2026-09-01 13:50:01,109 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:96 | === Stage: solve full stochastic MILP ===
+2026-09-01 13:50:01,112 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:102 | Building optimisation model...
+2026-09-01 13:50:01,125 | WARNING  | hydrogen_res_opt.scenario_generation | scenario_generation.py:65 | Negative DK1 spot prices present in scenario tree (physically plausible for DK1, but check inputs if unexpected).
+2026-09-01 14:01:22,586 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:91 | === Stage: scenario generation ===
+2026-09-01 14:01:22,588 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-09-01 14:01:41,368 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.170
+2026-09-01 14:01:41,369 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:96 | === Stage: solve full stochastic MILP ===
+2026-09-01 14:01:41,369 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:102 | Building optimisation model...
+2026-09-01 14:01:41,471 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:01:41,471 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:109 | Model construction finished in 0.10 seconds.
+2026-09-01 14:01:41,629 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:122 | Model size: variables=1242, binary=40, integer=0, constraints=2832
+2026-09-01 14:01:41,629 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:139 | Starting MILP solver...
+2026-09-01 14:01:41,630 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 2 violation(s): ['F1 violated: max production over horizon (n_period=24) 9.1 t < target D=870.0 t (raise P_elec_max, raise efficiency, lower D, or increase n_period)', 'F3 violated: S_max=10.0 t < implied hourly demand 60.5375 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']
+2026-09-01 14:01:41,630 | ERROR    | hydrogen_res_opt.pipeline | pipeline.py:155 | Full stochastic MILP solve failed.
+Traceback (most recent call last):
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\pipeline.py", line 142, in run_full_pipeline
+    outcome = solve(
+              ^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\solver_runner.py", line 269, in solve
+    raise InfeasibilityError(
+hydrogen_res_opt.exceptions.InfeasibilityError: [HRO-401] Feasibility pre-checks (Section 15, F0-F5) failed before solving. | context={'violations': ['F1 violated: max production over horizon (n_period=24) 9.1 t < target D=870.0 t (raise P_elec_max, raise efficiency, lower D, or increase n_period)', 'F3 violated: S_max=10.0 t < implied hourly demand 60.5375 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']}
+2026-09-01 14:11:23,238 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:91 | === Stage: scenario generation ===
+2026-09-01 14:11:23,241 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-09-01 14:11:46,908 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.170
+2026-09-01 14:11:46,909 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:96 | === Stage: solve full stochastic MILP ===
+2026-09-01 14:11:46,911 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:102 | Building optimisation model...
+2026-09-01 14:11:47,064 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:11:47,067 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:109 | Model construction finished in 0.16 seconds.
+2026-09-01 14:11:47,399 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:122 | Model size: variables=1242, binary=40, integer=0, constraints=2832
+2026-09-01 14:11:47,399 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:139 | Starting MILP solver...
+2026-09-01 14:11:47,400 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 2 violation(s): ['F1 violated: max production over horizon (n_period=24) 9.1 t < target D=870.0 t (raise P_elec_max, raise efficiency, lower D, or increase n_period)', 'F3 violated: S_max=2 t < implied hourly demand 60.5375 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']
+2026-09-01 14:11:47,401 | ERROR    | hydrogen_res_opt.pipeline | pipeline.py:155 | Full stochastic MILP solve failed.
+Traceback (most recent call last):
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\pipeline.py", line 142, in run_full_pipeline
+    outcome = solve(
+              ^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\solver_runner.py", line 269, in solve
+    raise InfeasibilityError(
+hydrogen_res_opt.exceptions.InfeasibilityError: [HRO-401] Feasibility pre-checks (Section 15, F0-F5) failed before solving. | context={'violations': ['F1 violated: max production over horizon (n_period=24) 9.1 t < target D=870.0 t (raise P_elec_max, raise efficiency, lower D, or increase n_period)', 'F3 violated: S_max=2 t < implied hourly demand 60.5375 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']}
+2026-09-01 14:39:28,628 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:91 | === Stage: scenario generation ===
+2026-09-01 14:39:28,631 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:112 | Generating synthetic scenario pool: pool_size=500, n_periods=24, target n_scenarios=2, wind-price corr=-0.35
+2026-09-01 14:39:51,035 | INFO     | hydrogen_res_opt.scenario_generation | scenario_generation.py:166 | Empirical wind-price correlation on reduced tree: -0.170
+2026-09-01 14:39:51,038 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:96 | === Stage: solve full stochastic MILP ===
+2026-09-01 14:39:51,039 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:102 | Building optimisation model...
+2026-09-01 14:39:51,174 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:39:51,174 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:109 | Model construction finished in 0.14 seconds.
+2026-09-01 14:39:51,427 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:122 | Model size: variables=1242, binary=40, integer=0, constraints=2832
+2026-09-01 14:39:51,427 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:139 | Starting MILP solver...
+2026-09-01 14:39:51,429 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-09-01 14:39:53,735 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/3), time_limit=7200s, mip_gap=0.0100
+2026-09-01 14:39:54,371 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:377 | Solve finished in 0.6s: status=ok termination=optimal objective=5338.6379
+2026-09-01 14:39:54,373 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:149 | MILP solver completed successfully in 2.94 seconds.
+2026-09-01 14:39:54,375 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:164 | === Stage: postprocessing / result extraction ===
+2026-09-01 14:39:54,375 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:63 | LCOH = 1.1708 EUR/kg (TC=5338.64 EUR, D=4.6 t/yr)
+2026-09-01 14:39:54,462 | WARNING  | hydrogen_res_opt.postprocessing | postprocessing.py:94 | extract_res_mix: no active (x[i,j]=1) connections found in the solution.
+2026-09-01 14:39:54,485 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:175 | Storage buffer binding in 50.0% of scenarios (S_max=2.0 t)
+2026-09-01 14:39:54,491 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:166 | LCOH = 1.1708 EUR/kg
+2026-09-01 14:39:54,491 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:171 | === Stage: Value of the Stochastic Solution ===
+2026-09-01 14:39:54,493 | INFO     | hydrogen_res_opt.vss_analysis | vss_analysis.py:55 | VSS step 1/2: solving the full stochastic model (|Omega|=2)
+2026-09-01 14:39:54,584 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:39:54,584 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-09-01 14:39:54,594 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/3), time_limit=7200s, mip_gap=0.0100
+2026-09-01 14:39:55,164 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:377 | Solve finished in 0.6s: status=ok termination=optimal objective=5338.6379
+2026-09-01 14:39:55,164 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:63 | LCOH = 1.1708 EUR/kg (TC=5338.64 EUR, D=4.6 t/yr)
+2026-09-01 14:39:55,164 | INFO     | hydrogen_res_opt.vss_analysis | vss_analysis.py:61 | VSS step 2/2: solving the deterministic expected-value model
+2026-09-01 14:39:55,227 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=1
+2026-09-01 14:39:55,230 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-09-01 14:39:55,238 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/3), time_limit=7200s, mip_gap=0.0100
+2026-09-01 14:39:57,685 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:234 | IIS found 28 conflicting element(s) (26 constraint(s), 2 bound(s)), written to logs\solver\infeasible_1788266397.ilp: ['C10_annual_target(0)', 'C11_storage_dynamics(0_1)', 'C11_storage_dynamics(0_2)', 'C11_storage_dynamics(0_3)', 'C11_storage_dynamics(0_4)', 'C11_storage_dynamics(0_5)', 'C11_storage_dynamics(0_6)', 'C11_storage_dynamics(0_7)', 'C11_storage_dynamics(0_8)', 'C11_storage_dynamics(0_9)', 'C11_storage_dynamics(0_10)', 'C11_storage_dynamics(0_11)', 'C11_storage_dynamics(0_12)', 'C11_storage_dynamics(0_13)', 'C11_storage_dynamics(0_14)', 'C11_storage_dynamics(0_15)', 'C11_storage_dynamics(0_16)', 'C11_storage_dynamics(0_17)', 'C11_storage_dynamics(0_18)', 'C11_storage_dynamics(0_19)', 'C11_storage_dynamics(0_20)', 'C11_storage_dynamics(0_21)', 'C11_storage_dynamics(0_22)', 'C11_storage_dynamics(0_23)', 'C13_cyclic_upper(0)', 'C9_hydrogen_production(0_0)', 'bound:p(0_0)[UB]', 'bound:s(0_0)[LB]']
+2026-09-01 14:39:57,688 | ERROR    | hydrogen_res_opt.pipeline | pipeline.py:175 | VSS computation failed; continuing without it.
+Traceback (most recent call last):
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\pipeline.py", line 173, in run_full_pipeline
+    result.vss = compute_vss(sets, config, scenario_tree)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\vss_analysis.py", line 65, in compute_vss
+    det_outcome = solve(det_build, **solver_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\solver_runner.py", line 355, in solve
+    raise InfeasibilityError(
+hydrogen_res_opt.exceptions.InfeasibilityError: [HRO-401] Solver reported the model as infeasible. | context={'status': 'warning', 'termination_condition': 'infeasible', 'solver_log': 'logs\\solver\\solve_1788266395.log', 'iis_log': 'logs\\solver\\infeasible_1788266397.ilp', 'iis_conflicting_elements': ['C10_annual_target(0)', 'C11_storage_dynamics(0_1)', 'C11_storage_dynamics(0_2)', 'C11_storage_dynamics(0_3)', 'C11_storage_dynamics(0_4)', 'C11_storage_dynamics(0_5)', 'C11_storage_dynamics(0_6)', 'C11_storage_dynamics(0_7)', 'C11_storage_dynamics(0_8)', 'C11_storage_dynamics(0_9)', 'C11_storage_dynamics(0_10)', 'C11_storage_dynamics(0_11)', 'C11_storage_dynamics(0_12)', 'C11_storage_dynamics(0_13)', 'C11_storage_dynamics(0_14)', 'C11_storage_dynamics(0_15)', 'C11_storage_dynamics(0_16)', 'C11_storage_dynamics(0_17)', 'C11_storage_dynamics(0_18)', 'C11_storage_dynamics(0_19)', 'C11_storage_dynamics(0_20)', 'C11_storage_dynamics(0_21)', 'C11_storage_dynamics(0_22)', 'C11_storage_dynamics(0_23)', 'C13_cyclic_upper(0)', 'C9_hydrogen_production(0_0)', 'bound:p(0_0)[UB]', 'bound:s(0_0)[LB]']}
+2026-09-01 14:39:57,969 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:178 | === Stage: Value of Storage ===
+2026-09-01 14:39:57,969 | INFO     | hydrogen_res_opt.vss_analysis | vss_analysis.py:102 | VoStorage: solving with configured storage (S_max=2.0 t)
+2026-09-01 14:39:58,239 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:39:58,241 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-09-01 14:39:58,254 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/3), time_limit=7200s, mip_gap=0.0100
+2026-09-01 14:39:59,180 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:377 | Solve finished in 0.9s: status=ok termination=optimal objective=5338.6379
+2026-09-01 14:39:59,182 | INFO     | hydrogen_res_opt.postprocessing | postprocessing.py:63 | LCOH = 1.1708 EUR/kg (TC=5338.64 EUR, D=4.6 t/yr)
+2026-09-01 14:39:59,183 | INFO     | hydrogen_res_opt.vss_analysis | vss_analysis.py:108 | VoStorage: solving with S_max=0 (no storage)
+2026-09-01 14:39:59,313 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:39:59,313 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:159 | Feasibility pre-check found 1 violation(s): ['F3 violated: S_max=1e-06 t < implied hourly demand 0.3173 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']
+2026-09-01 14:39:59,313 | ERROR    | hydrogen_res_opt.pipeline | pipeline.py:182 | Value-of-storage computation failed; continuing without it.
+Traceback (most recent call last):
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\pipeline.py", line 180, in run_full_pipeline
+    result.value_of_storage = compute_value_of_storage(sets, config, scenario_tree)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\vss_analysis.py", line 113, in compute_value_of_storage
+    no_outcome = solve(no_build, **solver_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\solver_runner.py", line 269, in solve
+    raise InfeasibilityError(
+hydrogen_res_opt.exceptions.InfeasibilityError: [HRO-401] Feasibility pre-checks (Section 15, F0-F5) failed before solving. | context={'violations': ['F3 violated: S_max=1e-06 t < implied hourly demand 0.3173 t/h (non-flat offtake profiles may violate this more severely at true peak hours -- re-check with the real profile)']}
+2026-09-01 14:39:59,316 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:185 | === Stage: break-even cable distance ===
+2026-09-01 14:39:59,316 | INFO     | hydrogen_res_opt.breakeven_analysis | breakeven_analysis.py:88 | Break-even sweep: remote_site=remote1 substation=FRN, 10 distances
+2026-09-01 14:39:59,571 | INFO     | hydrogen_res_opt.model_builder | model_builder.py:468 | Built MILP: |I|=4 |J|=2 |K1|=2 |K2|=3 |T|=24 |Omega|=2
+2026-09-01 14:39:59,572 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:161 | Feasibility pre-checks F0-F5 passed.
+2026-09-01 14:39:59,580 | INFO     | hydrogen_res_opt.solver_runner | solver_runner.py:321 | Solving with gurobi (attempt 1/3), time_limit=7200s, mip_gap=0.0100
+2026-09-01 14:40:02,752 | ERROR    | hydrogen_res_opt.solver_runner | solver_runner.py:234 | IIS found 6 conflicting element(s) (3 constraint(s), 3 bound(s)), written to logs\solver\infeasible_1788266402.ilp: ['C14_active_balance(remote1_FRN_1_23)', 'C14_reactive_balance(remote1_FRN_1_23)', 'C14_voltage_drop_lower(remote1_FRN_1_23)', 'bound:p(1_23)[UB]', 'bound:r(1_23)[LB]', 'bound:v(FRN_1_23)[UB]']
+2026-09-01 14:40:02,767 | ERROR    | hydrogen_res_opt.pipeline | pipeline.py:194 | Break-even sweep failed; continuing without it.
+Traceback (most recent call last):
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\pipeline.py", line 187, in run_full_pipeline
+    result.breakeven = breakeven_distance(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\breakeven_analysis.py", line 93, in breakeven_distance
+    lcoh = _resolve_at_distance(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\breakeven_analysis.py", line 63, in _resolve_at_distance
+    outcome = solve(build, **solver_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\hydrogen_res_opt\solver_runner.py", line 355, in solve
+    raise InfeasibilityError(
+hydrogen_res_opt.exceptions.InfeasibilityError: [HRO-401] Solver reported the model as infeasible. | context={'status': 'warning', 'termination_condition': 'infeasible', 'solver_log': 'logs\\solver\\solve_1788266399.log', 'iis_log': 'logs\\solver\\infeasible_1788266402.ilp', 'iis_conflicting_elements': ['C14_active_balance(remote1_FRN_1_23)', 'C14_reactive_balance(remote1_FRN_1_23)', 'C14_voltage_drop_lower(remote1_FRN_1_23)', 'bound:p(1_23)[UB]', 'bound:r(1_23)[LB]', 'bound:v(FRN_1_23)[UB]']}
+2026-09-01 14:40:03,050 | INFO     | hydrogen_res_opt.pipeline | pipeline.py:282 | Result tables written to C:\Users\LF15NS\OneDrive - Aalborg Universitet\Skrivebord\COPPER\Model_and_Other Details\Powerfactory Data reading\Paper For WP4\Implementation\hydrogen_res_opt\outputs\stage_20MW

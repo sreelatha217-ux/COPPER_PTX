@@ -1,0 +1,2 @@
+[console_scripts]
+hydrogen-res-opt = hydrogen_res_opt.cli:main

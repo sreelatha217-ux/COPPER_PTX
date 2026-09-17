@@ -1,0 +1,21 @@
+# Core numerical / data stack
+numpy>=1.24
+pandas>=2.0
+
+# Optimization
+pyomo>=6.7
+# At least one MILP solver must also be installed separately. Two options:
+#   * pulp>=2.7   -- bundles a working CBC binary for Windows/Mac/Linux;
+#                    solver_runner.py auto-detects and uses it if a bare
+#                    'cbc' isn't on PATH, so this is the easiest path on
+#                    a machine without conda.
+#   * conda install -c conda-forge coincbc   -- CBC via conda instead
+#   * or a licensed Gurobi / CPLEX installation (production, Section 17)
+pulp>=2.7
+
+# Testing
+pytest>=7.4
+
+# Optional: only required if using ScenarioGenerator.from_historical_data
+# with real Energinet/ERA5 series loaded from files
+# openpyxl>=3.1    # if reading .xlsx historical data

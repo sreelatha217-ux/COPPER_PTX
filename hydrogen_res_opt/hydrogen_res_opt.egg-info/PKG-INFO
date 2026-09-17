@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: hydrogen_res_opt
+Version: 0.1.0
+Summary: Co-optimization of RES capacity, substation selection and cable sizing for green hydrogen LCOH under stochastic DK1 electricity prices, with PowerFactory grid validation.
+Author: Aalborg University - Department of Energy
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.24
+Requires-Dist: pandas>=2.0
+Requires-Dist: pyomo>=6.7
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Dynamic: author
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

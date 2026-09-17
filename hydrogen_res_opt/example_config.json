@@ -1,0 +1,14 @@
+{
+  "electrolyser": {
+    "p_elec_max": 100.0,
+    "annual_target_tonnes": 1500.0
+  },
+  "scenarios": {
+    "n_scenarios": 50,
+    "monte_carlo_pool_size": 500,
+    "random_seed": 42
+  },
+  "solver_name": "cbc",
+  "solver_time_limit_s": 3600,
+  "mip_gap": 0.01
+}

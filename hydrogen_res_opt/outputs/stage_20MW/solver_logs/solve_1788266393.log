@@ -1,0 +1,54 @@
+Solver command line: []
+
+Warning: row 114 (name "c_u_C6_res_availability(0_18)_") contains 1 small (<= 1e-13) coefficient(s), ignored
+Warning: row 138 (name "c_u_C6_res_availability(1_18)_") contains 2 small (<= 1e-13) coefficient(s), ignored
+Warning: lp file contains 2 small (<= 1e-13) coefficient(s), ignored
+Read LP format model from file C:\Users\LF15NS\AppData\Local\Temp\tmp_a8zkzb1.pyomo.lp
+Reading time = 0.08 seconds
+total_cost: 2448 rows, 1242 columns, 8336 nonzeros
+Set parameter TimeLimit to value 7200
+Set parameter MIPGap to value 0.01
+Set parameter NonConvex to value 2
+Gurobi Optimizer version 13.0.3 build v13.0.3rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  7200
+MIPGap  0.01
+NonConvex  2
+
+Optimize a model with 2448 rows, 1242 columns and 8336 nonzeros (Min)
+Model fingerprint: 0x6c7a4840
+Model has 76 linear objective coefficients
+Model has 384 quadratic constraints
+Variable types: 1202 continuous, 40 integer (40 binary)
+Coefficient statistics:
+  Matrix range     [9e-03, 1e+03]
+  QMatrix range    [3e-01, 3e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [8e+00, 3e+05]
+  Bounds range     [9e-01, 3e+02]
+  RHS range        [2e-01, 2e+03]
+
+Presolve removed 2216 rows and 1100 columns
+Presolve time: 0.01s
+Presolved: 232 rows, 142 columns, 576 nonzeros
+Variable types: 142 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 5.338638e+03, 150 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    5338.6378735 5338.63787  0.00%     -    0s
+
+Explored 1 nodes (150 simplex iterations) in 0.06 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 5338.64 
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 5.338637873504e+03, best bound 5.338637873504e+03, gap 0.0000%
+

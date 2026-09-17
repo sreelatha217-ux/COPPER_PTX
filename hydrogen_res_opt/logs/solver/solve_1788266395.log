@@ -1,0 +1,53 @@
+Solver command line: []
+
+Warning: row 90 (name "c_u_C6_res_availability(0_18)_") contains 1 small (<= 1e-13) coefficient(s), ignored
+Warning: lp file contains 1 small (<= 1e-13) coefficient(s), ignored
+Read LP format model from file C:\Users\LF15NS\AppData\Local\Temp\tmpl9xctoy9.pyomo.lp
+Reading time = 0.09 seconds
+total_cost: 1248 rows, 642 columns, 4226 nonzeros
+Set parameter TimeLimit to value 7200
+Set parameter MIPGap to value 0.01
+Set parameter NonConvex to value 2
+Gurobi Optimizer version 13.0.3 build v13.0.3rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  7200
+MIPGap  0.01
+NonConvex  2
+
+Optimize a model with 1248 rows, 642 columns and 4226 nonzeros (Min)
+Model fingerprint: 0x2777c7a1
+Model has 52 linear objective coefficients
+Model has 192 quadratic constraints
+Variable types: 602 continuous, 40 integer (40 binary)
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+03]
+  QMatrix range    [3e-01, 3e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [3e+01, 3e+05]
+  Bounds range     [9e-01, 3e+02]
+  RHS range        [2e-01, 2e+03]
+
+Presolve removed 1132 rows and 570 columns
+Presolve time: 0.02s
+Presolved: 116 rows, 72 columns, 288 nonzeros
+Variable types: 72 continuous, 0 integer (0 binary)
+
+Root relaxation: infeasible, 35 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (35 simplex iterations) in 0.06 seconds (0.00 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+

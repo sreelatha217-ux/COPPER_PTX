@@ -1,0 +1,85 @@
+\ Model RES_Substation_Cable_LCOH_MILP_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+\ Signature: 0xb1f44ea9afa442d
+Minimize
+ 
+Subject To
+ C10_annual_target(0): q(0_0) + q(0_1) + q(0_2) + q(0_3) + q(0_4) + q(0_5)
+   + q(0_6) + q(0_7) + q(0_8) + q(0_9) + q(0_10) + q(0_11) + q(0_12)
+   + q(0_13) + q(0_14) + q(0_15) + q(0_16) + q(0_17) + q(0_18) + q(0_19)
+   + q(0_20) + q(0_21) + q(0_22) + q(0_23) >= 4.56
+ C11_storage_dynamics(0_1): - 1.67 q(0_1) - s(0_0) + s(0_1) = -0.19
+ C11_storage_dynamics(0_2): - 1.67 q(0_2) - s(0_1) + s(0_2) = -0.19
+ C11_storage_dynamics(0_3): - 1.67 q(0_3) - s(0_2) + s(0_3) = -0.19
+ C11_storage_dynamics(0_4): - 1.67 q(0_4) - s(0_3) + s(0_4) = -0.19
+ C11_storage_dynamics(0_5): - 1.67 q(0_5) - s(0_4) + s(0_5) = -0.19
+ C11_storage_dynamics(0_6): - 1.67 q(0_6) - s(0_5) + s(0_6) = -0.19
+ C11_storage_dynamics(0_7): - 1.67 q(0_7) - s(0_6) + s(0_7) = -0.19
+ C11_storage_dynamics(0_8): - 1.67 q(0_8) - s(0_7) + s(0_8) = -0.19
+ C11_storage_dynamics(0_9): - 1.67 q(0_9) - s(0_8) + s(0_9) = -0.19
+ C11_storage_dynamics(0_10): - 1.67 q(0_10) - s(0_9) + s(0_10) = -0.19
+ C11_storage_dynamics(0_11): - 1.67 q(0_11) - s(0_10) + s(0_11) = -0.19
+ C11_storage_dynamics(0_12): - 1.67 q(0_12) - s(0_11) + s(0_12) = -0.19
+ C11_storage_dynamics(0_13): - 1.67 q(0_13) - s(0_12) + s(0_13) = -0.19
+ C11_storage_dynamics(0_14): - 1.67 q(0_14) - s(0_13) + s(0_14) = -0.19
+ C11_storage_dynamics(0_15): - 1.67 q(0_15) - s(0_14) + s(0_15) = -0.19
+ C11_storage_dynamics(0_16): - 1.67 q(0_16) - s(0_15) + s(0_16) = -0.19
+ C11_storage_dynamics(0_17): - 1.67 q(0_17) - s(0_16) + s(0_17) = -0.19
+ C11_storage_dynamics(0_18): - 1.67 q(0_18) - s(0_17) + s(0_18) = -0.19
+ C11_storage_dynamics(0_19): - 1.67 q(0_19) - s(0_18) + s(0_19) = -0.19
+ C11_storage_dynamics(0_20): - 1.67 q(0_20) - s(0_19) + s(0_20) = -0.19
+ C11_storage_dynamics(0_21): - 1.67 q(0_21) - s(0_20) + s(0_21) = -0.19
+ C11_storage_dynamics(0_22): - 1.67 q(0_22) - s(0_21) + s(0_22) = -0.19
+ C11_storage_dynamics(0_23): - 1.67 q(0_23) - s(0_22) + s(0_23) = -0.19
+ C13_cyclic_upper(0): s(0_23) <= 1.02
+ C9_hydrogen_production(0_0): - 0.019 p(0_0) + q(0_0) = 0
+Bounds
+ -infinity <= p(0_0) <= 20
+ q(0_0) free
+ q(0_1) free
+ q(0_2) free
+ q(0_3) free
+ q(0_4) free
+ q(0_5) free
+ q(0_6) free
+ q(0_7) free
+ q(0_8) free
+ q(0_9) free
+ q(0_10) free
+ q(0_11) free
+ q(0_12) free
+ q(0_13) free
+ q(0_14) free
+ q(0_15) free
+ q(0_16) free
+ q(0_17) free
+ q(0_18) free
+ q(0_19) free
+ q(0_20) free
+ q(0_21) free
+ q(0_22) free
+ q(0_23) free
+ s(0_1) free
+ s(0_2) free
+ s(0_3) free
+ s(0_4) free
+ s(0_5) free
+ s(0_6) free
+ s(0_7) free
+ s(0_8) free
+ s(0_9) free
+ s(0_10) free
+ s(0_11) free
+ s(0_12) free
+ s(0_13) free
+ s(0_14) free
+ s(0_15) free
+ s(0_16) free
+ s(0_17) free
+ s(0_18) free
+ s(0_19) free
+ s(0_20) free
+ s(0_21) free
+ s(0_22) free
+ s(0_23) free
+End
