@@ -1,0 +1,5 @@
+FID(a:40),OP(a:1),loc_name(a:80),fold_id(p),chr_name(a:40),ptapset(r),stapset(r),outserv(i),typ_id(p)
+3547,C,GAU-GÅR CT800/5,3778,,800,5,0,4542
+3548,C,GAU-VDG CT800/5,3787,,800,5,0,4542
+3549,C,TAU-TÅP CT800/5,4239,,800,5,0,4542
+3550,C,TAU-SØV CT800/5,4253,,800,5,0,4542

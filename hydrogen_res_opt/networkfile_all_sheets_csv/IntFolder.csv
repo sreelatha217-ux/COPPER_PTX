@@ -1,0 +1,53 @@
+FID(a:40),OP(a:1),loc_name(a:80),fold_id(p)
+1228,C,Layers,3524.0
+1229,C,Settings,3524.0
+1230,C,Layers,3525.0
+1231,C,Settings,3525.0
+1232,C,Layers,3526.0
+1233,C,Settings,3526.0
+1234,C,Layers,3527.0
+1235,C,Settings,3527.0
+1236,C,Layers,3528.0
+1237,C,Settings,3528.0
+1238,C,Layers,3529.0
+1239,C,Settings,3529.0
+1240,C,Layers,3530.0
+1241,C,Settings,3530.0
+1242,C,Layers,3531.0
+1243,C,Settings,3531.0
+1244,C,Layers,3532.0
+1245,C,Settings,3532.0
+1246,C,Layers,3533.0
+1247,C,Settings,3533.0
+1248,C,Layers,3534.0
+1249,C,Settings,3534.0
+1250,C,Layers,3535.0
+1251,C,Settings,3535.0
+1252,C,Layers,3536.0
+1253,C,Settings,3536.0
+1254,C,Layers,3537.0
+1255,C,Settings,3537.0
+1256,C,Layers,3538.0
+1257,C,Settings,3538.0
+1258,C,Layers,3539.0
+1259,C,Settings,3539.0
+1260,C,Layers,3540.0
+1261,C,Settings,3540.0
+1262,C,Layers,3541.0
+1263,C,Settings,3541.0
+1264,C,Layers,3542.0
+1265,C,Settings,3542.0
+1266,C,Layers,3543.0
+1267,C,Settings,3543.0
+1268,C,Layers,3544.0
+1269,C,Settings,3544.0
+1270,C,Layers,3545.0
+1271,C,Settings,3545.0
+1272,C,Kabel/Luftleder - Typer,
+1273,C,60/10kV Transformere,
+1274,C,F21 Distance Polygonal,1275.0
+1275,C,Generic,1276.0
+1276,C,Relays,1277.0
+1277,C,Protection Devices,1278.0
+1278,C,DIgSILENT Library,1279.0
+1279,C,External,

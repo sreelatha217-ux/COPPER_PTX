@@ -1,0 +1,332 @@
+"""
+PowerFactory Load Flow Runner
+-------------------------------
+Connects to a running/embedded PowerFactory instance, activates a project,
+runs a load flow calculation, and extracts key results (bus voltages,
+line loadings, generator dispatch, transformer loadings) into Python-native
+structures.
+
+Designed to be reused as a "black-box" evaluation function for later
+optimization (e.g. scipy.optimize, pyomo, or a custom heuristic) where
+decision variables (gen setpoints, tap positions, etc.) are written to
+PowerFactory before each load flow call, and the results here become
+the objective/constraint values.
+"""
+
+import sys
+import os
+import csv
+
+# ---------------------------------------------------------------------
+# 1. Make the PowerFactory Python API importable
+# ---------------------------------------------------------------------
+PF_INSTALL_PATH = r"C:\Program Files\DIgSILENT\PowerFactory 2024 SP6"
+PF_PYTHON_PATH = r"C:\Program Files\DIgSILENT\PowerFactory 2024 SP6\Python\3.12"
+
+if not os.path.exists(PF_PYTHON_PATH):
+    raise FileNotFoundError(
+        f"PowerFactory Python API folder not found:\n{PF_PYTHON_PATH}\n"
+        "Check your installed PowerFactory version/service pack and Python "
+        "sub-version folder under '...\\Python\\'."
+    )
+
+if PF_PYTHON_PATH not in sys.path:
+    sys.path.append(PF_PYTHON_PATH)
+
+# Python 3.8+ needs this: register the PF install dir so dependent DLLs
+# (not just the .pyd itself) can be found. Without it you get
+# "ImportError: DLL load failed while importing powerfactory".
+if hasattr(os, "add_dll_directory"):
+    os.add_dll_directory(PF_INSTALL_PATH)
+
+import powerfactory as pf  # noqa: E402
+
+
+class PowerFactoryLoadFlow:
+    def __init__(self, project_name: str, study_case_name: str = None, headless: bool = True):
+        """
+        project_name: full path of the project inside the PF user tree,cd..
+                      e.g. r"\\LF15NS\\TREFOR RYTTERGÅRDEN(3)"
+        study_case_name: specific study case to activate (optional; uses the
+                          project's currently active/default study case if None)
+        headless: if True, keeps the PF GUI hidden (faster, good for
+                  optimization loops). Set False while debugging.
+        """
+        self.app = pf.GetApplication()
+        if self.app is None:
+            raise RuntimeError("Could not start/connect to the PowerFactory application.")
+
+        if not headless:
+            self.app.Show()
+
+        self.app.ClearOutputWindow()
+        self.app.EchoOff()  # suppress internal PF logging noise; comment out to debug
+
+        # -----------------------------------------------------------
+        # Activate project
+        # -----------------------------------------------------------
+        ret = self.app.ActivateProject(project_name)
+        if ret != 0:
+            self._print_available_projects()
+            raise RuntimeError(
+                f"Could not activate project '{project_name}' (return code {ret}).\n"
+                "See the project list printed above for exact valid paths/names."
+            )
+
+        self.project = self.app.GetActiveProject()
+        if self.project is None:
+            raise RuntimeError("Project activation reported success but GetActiveProject() is None.")
+
+        # -----------------------------------------------------------
+        # Activate study case
+        # -----------------------------------------------------------
+        if study_case_name:
+            self._activate_study_case(study_case_name)
+
+        self.study_case = self.app.GetActiveStudyCase()
+        if self.study_case is None:
+            raise RuntimeError(
+                "No active study case found. Either pass study_case_name explicitly, "
+                "or activate one manually in the project before running this script."
+            )
+
+        # -----------------------------------------------------------
+        # Load flow command object
+        # -----------------------------------------------------------
+        self.ldf = self.app.GetFromStudyCase("ComLdf")
+        if self.ldf is None:
+            raise RuntimeError("Could not retrieve ComLdf (load flow command) from the study case.")
+
+        # Results container (optional, only needed if you log time-series results)
+        self.res = self.app.GetFromStudyCase("Myresult.ElmRes")
+        if self.res is not None:
+            self.res.Clear()
+
+    # -------------------------------------------------------------
+    def _print_available_projects(self):
+        """Helper: lists projects visible under the current user, to aid debugging."""
+        user = self.app.GetCurrentUser()
+        if user is None:
+            print("Could not retrieve current PF user.")
+            return
+        projects = user.GetContents("*.IntPrj", 1)  # 1 = recursive search
+        print(f"\nProjects found under user '{user.loc_name}':")
+        for p in projects:
+            print(" -", p.GetFullName())
+        if not projects:
+            print(" (none found — the project may need to be imported first)")
+
+    def _activate_study_case(self, study_case_name: str):
+        study_case_folder = self.app.GetProjectFolder("study")
+        cases = study_case_folder.GetContents(f"{study_case_name}.IntCase")
+        if not cases:
+            raise RuntimeError(f"Study case '{study_case_name}' not found in project.")
+        cases[0].Activate()
+
+    # -------------------------------------------------------------
+    # Load flow configuration
+    # -------------------------------------------------------------
+    def configure(self, balanced: bool = False):
+        """
+        balanced=False -> AC unbalanced load flow (iopt_net = 1)
+        balanced=True  -> AC balanced load flow (iopt_net = 0)
+        Verify against your PF version if results look off:
+            print(self.ldf.GetAttributeNames())
+        """
+        self.ldf.iopt_net = 0 if balanced else 1
+
+    # -------------------------------------------------------------
+    # Run
+    # -------------------------------------------------------------
+    def run(self) -> bool:
+        """Executes the load flow. Returns True if converged, False otherwise."""
+        error_code = self.ldf.Execute()
+        converged = (error_code == 0)
+        if not converged:
+            self.app.PrintWarn(f"Load flow did NOT converge (error code: {error_code})")
+        return converged
+
+    # -------------------------------------------------------------
+    # Results extraction (safe attribute access)
+    # -------------------------------------------------------------
+    @staticmethod
+    def _safe_get(obj, attr):
+        try:
+            return obj.GetAttribute(attr)
+        except Exception:
+            return None
+
+    def get_bus_voltages(self):
+        buses = self.app.GetCalcRelevantObjects("*.ElmTerm")
+        return [
+            {
+                "name": b.loc_name,
+                "u_pu": self._safe_get(b, "m:u"),
+                "u_kv": self._safe_get(b, "m:U"),
+                "angle_deg": self._safe_get(b, "m:phiu"),
+            }
+            for b in buses
+        ]
+
+    def get_line_loadings(self):
+        lines = self.app.GetCalcRelevantObjects("*.ElmLne")
+        return [
+            {
+                "name": l.loc_name,
+                "loading_pct": self._safe_get(l, "c:loading"),
+                "p_from_mw": self._safe_get(l, "m:P:bus1"),
+                "q_from_mvar": self._safe_get(l, "m:Q:bus1"),
+            }
+            for l in lines
+        ]
+
+    def get_generator_dispatch(self):
+        gens = self.app.GetCalcRelevantObjects("*.ElmSym")
+        return [
+            {
+                "name": g.loc_name,
+                "p_mw": self._safe_get(g, "m:P:bus1"),
+                "q_mvar": self._safe_get(g, "m:Q:bus1"),
+            }
+            for g in gens
+        ]
+
+    def get_transformer_loadings(self):
+        trafos = self.app.GetCalcRelevantObjects("*.ElmTr2")
+        return [
+            {
+                "name": t.loc_name,
+                "loading_pct": self._safe_get(t, "c:loading"),
+            }
+            for t in trafos
+        ]
+
+    # -------------------------------------------------------------
+    # Save all extracted results to one CSV file
+    # -------------------------------------------------------------
+    def save_results_csv(self, filename: str = "powerfactory_results.csv"):
+        """
+        Extracts bus, line, generator, and transformer results and saves
+        them to a single CSV file. The 'result_type' column identifies
+        which PowerFactory object each row represents.
+        """
+        rows = []
+
+        for b in self.get_bus_voltages():
+            rows.append({
+                "result_type": "bus_voltage",
+                "name": b["name"],
+                "u_pu": b["u_pu"],
+                "u_kv": b["u_kv"],
+                "angle_deg": b["angle_deg"],
+                "loading_pct": "",
+                "p_mw": "",
+                "q_mvar": "",
+                "p_from_mw": "",
+                "q_from_mvar": "",
+            })
+
+        for l in self.get_line_loadings():
+            rows.append({
+                "result_type": "line_loading",
+                "name": l["name"],
+                "u_pu": "",
+                "u_kv": "",
+                "angle_deg": "",
+                "loading_pct": l["loading_pct"],
+                "p_mw": "",
+                "q_mvar": "",
+                "p_from_mw": l["p_from_mw"],
+                "q_from_mvar": l["q_from_mvar"],
+            })
+
+        for g in self.get_generator_dispatch():
+            rows.append({
+                "result_type": "generator_dispatch",
+                "name": g["name"],
+                "u_pu": "",
+                "u_kv": "",
+                "angle_deg": "",
+                "loading_pct": "",
+                "p_mw": g["p_mw"],
+                "q_mvar": g["q_mvar"],
+                "p_from_mw": "",
+                "q_from_mvar": "",
+            })
+
+        for t in self.get_transformer_loadings():
+            rows.append({
+                "result_type": "transformer_loading",
+                "name": t["name"],
+                "u_pu": "",
+                "u_kv": "",
+                "angle_deg": "",
+                "loading_pct": t["loading_pct"],
+                "p_mw": "",
+                "q_mvar": "",
+                "p_from_mw": "",
+                "q_from_mvar": "",
+            })
+
+        fieldnames = [
+            "result_type", "name", "u_pu", "u_kv", "angle_deg",
+            "loading_pct", "p_mw", "q_mvar", "p_from_mw", "q_from_mvar"
+        ]
+
+        with open(filename, "w", newline="", encoding="utf-8-sig") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+        print(f"Results saved to: {os.path.abspath(filename)}")
+        return filename
+
+    # -------------------------------------------------------------
+    # Convenience: set a generator's setpoint (for optimization loop)
+    # -------------------------------------------------------------
+    def set_generator_setpoint(self, gen_name: str, p_mw: float = None, q_mvar: float = None) -> bool:
+        gens = self.app.GetCalcRelevantObjects("*.ElmSym")
+        for gen in gens:
+            if gen.loc_name == gen_name:
+                if p_mw is not None:
+                    gen.pgini = p_mw
+                if q_mvar is not None:
+                    gen.qgini = q_mvar
+                return True
+        self.app.PrintWarn(f"Generator '{gen_name}' not found.")
+        return False
+
+    # -------------------------------------------------------------
+    def close(self):
+        """Deactivate the project cleanly."""
+        if self.project is not None:
+            self.project.Deactivate()
+
+
+# ---------------------------------------------------------------------
+# Example usage
+# ---------------------------------------------------------------------
+if __name__ == "__main__":
+    PROJECT_NAME = r' \LF15NS.IntUser\TREFOR RYTTERGÅRDEN(3).IntPrj'
+    STUDY_CASE = None  # or e.g. "Study Case 1"
+
+    STUDY_CASE = "Study Case_Existing_RES"
+    OPERATION_SCENARIO = "With newData_QS"
+    GRID = "Grid_2025Baseline"
+
+    pf_lf = PowerFactoryLoadFlow(
+        PROJECT_NAME,
+        study_case_name=STUDY_CASE,
+        headless=False
+    )
+    pf_lf.configure(balanced=False)
+
+    converged = pf_lf.run()
+    print(f"\nLoad flow converged: {converged}")
+
+    if converged:
+        # Save all load-flow results to CSV.
+        pf_lf.save_results_csv("powerfactory_results.csv")
+
+    pf_lf.close()
+

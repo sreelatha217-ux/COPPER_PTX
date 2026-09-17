@@ -1,0 +1,4 @@
+FID(a:40),OP(a:1),loc_name(a:80),fold_id(p),snss(r),rntxn(r),z2tz1(r),snssmin(r),rntxnmin(r),z2tz1min(r),chr_name(a:40),bustp(a:2),pgini(r),qgini(r),phiini(r),usetp(r),outserv(i),Kpf(r),K(r)
+1225,C,Energinet,733,100000,0.100000001490116,1,8000,0.100000001490116,1,,SL,0,0,0,1,0,0,0
+1226,C,Knabberup,758,100000,0.100000001490116,1,8000,0.100000001490116,1,,PV,0,0,0,1,0,0,0
+1227,C,Energinet,734,100000,0.100000001490116,1,8000,0.100000001490116,1,,SL,0,0,0,1,0,0,0
